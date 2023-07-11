@@ -7,10 +7,13 @@ public class PlayerController : MonoBehaviour
 
     [Range(1, 20)]
     [SerializeField] private float _speed = 1.0f;
+    [SerializeField] private GameObject projectilePrefab = null;
+    [Space]
     [Range(1, 50)]
     [Tooltip("Player boundary range of (+ x) to (- x) to what number is entered")]
     [SerializeField] private float _boundaryRange = 10;
-    public float _horizontalInput;
+
+    private float horizontalInput;
 
     // Update is called once per frame
     void Update()
@@ -25,7 +28,12 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(10, transform.position.y);
         }
         
-        _horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * _horizontalInput * Time.deltaTime * _speed);
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * _speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
