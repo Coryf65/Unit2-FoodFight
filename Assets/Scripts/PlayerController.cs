@@ -11,12 +11,6 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Player boundary range of (+ x) to (- x) to what number is entered")]
     [SerializeField] private float _boundaryRange = 10;
     public float _horizontalInput;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
