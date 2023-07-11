@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="216cbfbf-8ee9-46e3-be62-9a14534370bb" name="Changes" comment="put some object in the scene" />
+    <list default="true" id="216cbfbf-8ee9-46e3-be62-9a14534370bb" name="Changes" comment="settings?">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unit2-FoodFight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unit2-FoodFight/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689101363937</updated>
-      <workItem from="1689101365510" duration="893000" />
+      <workItem from="1689101365510" duration="1240000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <option name="closed" value="true" />
@@ -126,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689102646451</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="placed animals in scene">
+      <option name="closed" value="true" />
+      <created>1689102662833</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689102662833</updated>
+    </task>
+    <task id="LOCAL-00006" summary="settings?">
+      <option name="closed" value="true" />
+      <created>1689102675535</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689102675535</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +172,8 @@
     <MESSAGE value="Base project setup" />
     <MESSAGE value="adding starter files" />
     <MESSAGE value="put some object in the scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="put some object in the scene" />
+    <MESSAGE value="placed animals in scene" />
+    <MESSAGE value="settings?" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings?" />
   </component>
 </project>
