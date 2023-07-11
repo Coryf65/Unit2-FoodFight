@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Player boundary range of (+ x) to (- x) to what number is entered")]
     [SerializeField] private float _boundaryRange = 10;
 
+    [SerializeField] private GameObject _foodSpawnPoint;
+
     private float horizontalInput;
 
     // Update is called once per frame
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, _foodSpawnPoint.transform.position, projectilePrefab.transform.rotation);
         }
     }
 }
