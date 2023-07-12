@@ -495,8 +495,10 @@ GameObject:
   m_Component:
   - component: {fileID: 968404514676896894}
   - component: {fileID: 8024742535782483003}
+  - component: {fileID: 3730144014224247648}
   - component: {fileID: 733479757485377910}
   - component: {fileID: 1726617945018167623}
+  - component: {fileID: -4289660936352726048}
   m_Layer: 0
   m_Name: Animal_Rooster_Brown
   m_TagString: Untagged
@@ -525,7 +527,7 @@ Transform:
   - {fileID: 2410136627705195649}
   - {fileID: 6305722488390336002}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &8024742535782483003
 Animator:
@@ -548,6 +550,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &3730144014224247648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446112688787249911}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 11.1, z: 17.01}
+  m_Center: {x: 0, y: 8.98, z: 0}
 --- !u!114 &733479757485377910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +596,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2420057075f71ceb29914ddcb69ec217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boundary: 50
+  _topBoundary: 50
+  _lowerBoundary: -10
+--- !u!114 &-4289660936352726048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446112688787249911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf74c628adfd2b1cb97a072a3bbbcc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6219452888842663634
 GameObject:
   m_ObjectHideFlags: 0

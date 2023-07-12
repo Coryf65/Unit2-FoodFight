@@ -107,8 +107,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4535363215860632005}
   - component: {fileID: 7373237620374951421}
+  - component: {fileID: 4493952139437232107}
   - component: {fileID: 8556167973014095318}
   - component: {fileID: -5660969545141141938}
+  - component: {fileID: 8758506962597034436}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -131,7 +133,7 @@ Transform:
   - {fileID: 9219539207109702314}
   - {fileID: 1594383594868241062}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &7373237620374951421
 Animator:
@@ -154,6 +156,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &4493952139437232107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789149356212964847}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3, y: 6.5, z: 5.5}
+  m_Center: {x: 0, y: 2.7, z: 0}
 --- !u!114 &8556167973014095318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +202,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2420057075f71ceb29914ddcb69ec217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boundary: 50
+  _topBoundary: 50
+  _lowerBoundary: -10
+--- !u!114 &8758506962597034436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789149356212964847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf74c628adfd2b1cb97a072a3bbbcc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4265289391062847045
 GameObject:
   m_ObjectHideFlags: 0

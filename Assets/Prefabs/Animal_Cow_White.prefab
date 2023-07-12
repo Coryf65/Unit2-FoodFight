@@ -1225,8 +1225,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5905771004582056305}
   - component: {fileID: 7276031896836991103}
+  - component: {fileID: 8687949090597045884}
   - component: {fileID: 8118273463403230430}
   - component: {fileID: -8136056898950808344}
+  - component: {fileID: 7426171259317069438}
   m_Layer: 0
   m_Name: Animal_Cow_White
   m_TagString: Untagged
@@ -1248,7 +1250,7 @@ Transform:
   m_Children:
   - {fileID: 7700151164046300079}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &7276031896836991103
 Animator:
@@ -1271,6 +1273,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &8687949090597045884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933758337787163299}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.68, y: 30.53, z: 43}
+  m_Center: {x: 0, y: 15, z: 0}
 --- !u!114 &8118273463403230430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,7 +1319,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2420057075f71ceb29914ddcb69ec217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boundary: 50
+  _topBoundary: 50
+  _lowerBoundary: -10
+--- !u!114 &7426171259317069438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933758337787163299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf74c628adfd2b1cb97a072a3bbbcc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4988707809131872060
 GameObject:
   m_ObjectHideFlags: 0

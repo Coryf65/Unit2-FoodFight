@@ -22,12 +22,12 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.x < -_boundaryRange)
         {
-            transform.position = new Vector3(-10, transform.position.y);
+            transform.position = new Vector3(-_boundaryRange, transform.position.y);
         }
 
         if (transform.position.x > _boundaryRange)
         {
-            transform.position = new Vector3(10, transform.position.y);
+            transform.position = new Vector3(_boundaryRange, transform.position.y);
         }
         
         horizontalInput = Input.GetAxis("Horizontal");

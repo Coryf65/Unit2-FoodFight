@@ -296,9 +296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38e43356c7061341bd2953fed8a3959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 15
   projectilePrefab: {fileID: 1105717507560254126, guid: 3d4453cd15be9890fabac35d2800ed83, type: 3}
-  _boundaryRange: 10
+  _boundaryRange: 20
   _foodSpawnPoint: {fileID: 32334108}
 --- !u!4 &302816626 stripped
 Transform:
@@ -766,6 +766,8 @@ MonoBehaviour:
   - {fileID: 8301582385105410161, guid: e837eca366d4fff53a0e14dd71ec9ca9, type: 3}
   - {fileID: 8184005290077841076, guid: 8f2798bcd188e19298ebc3d7212fe7fd, type: 3}
   - {fileID: 5446112688787249911, guid: eda39e73eed4a9a5fbdac8040ef5290e, type: 3}
+  spawnStartDelay: 2
+  spawnRepeatRate: 1.5
 --- !u!1 &2005491088
 GameObject:
   m_ObjectHideFlags: 0
