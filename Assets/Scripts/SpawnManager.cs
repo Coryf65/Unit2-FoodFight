@@ -1,25 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-
     [SerializeField] private List<GameObject> _animalPrefabs;
+    [SerializeField] private int spawnStartDelay = 2;
+    [SerializeField] private float spawnRepeatRate = 1.5f;
     
     private int randomNumber;
     private float spawnRangeX = 20;
     private float spawnPositionZ = 20;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            SpawnRandomAnimal();
-        }
+        InvokeRepeating("SpawnRandomAnimal", spawnStartDelay, spawnRepeatRate);
     }
 
+    /// <summary>
+    /// Spawns an animal from our List at positions between the Ranges (spawnRangeX +-) and at the spawnPositionZ
+    /// </summary>
     void SpawnRandomAnimal()
     {
         randomNumber = Random.Range(0, _animalPrefabs.Count);
