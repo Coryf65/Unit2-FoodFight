@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [Space]
     [Range(1, 50)]
     [Tooltip("Player boundary range of (+ x) to (- x) to what number is entered")]
-    [SerializeField] private float _boundaryRange = 10;
+    [SerializeField] private float _boundaryRange = 20;
 
     [SerializeField] private GameObject _foodSpawnPoint;
 

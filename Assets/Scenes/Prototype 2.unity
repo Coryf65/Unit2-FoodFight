@@ -757,15 +757,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f3e25240400be26abbd680b46ba238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalPrefabs:
-  - {fileID: 5446112688787249911, guid: eda39e73eed4a9a5fbdac8040ef5290e, type: 3}
+  _animalPrefabs:
+  - {fileID: 1789149356212964847, guid: b70ea02dd351dfb14af93437ee50117c, type: 3}
   - {fileID: 8350750104889990699, guid: 025d32a4a750a8b50b614e1ca3b31e18, type: 3}
   - {fileID: 8661330139967980276, guid: 727e56f6d38ce16fd836d567c385dbae, type: 3}
-  - {fileID: 1789149356212964847, guid: b70ea02dd351dfb14af93437ee50117c, type: 3}
-  - {fileID: 8184005290077841076, guid: 8f2798bcd188e19298ebc3d7212fe7fd, type: 3}
-  - {fileID: 8301582385105410161, guid: e837eca366d4fff53a0e14dd71ec9ca9, type: 3}
-  - {fileID: 4933758337787163299, guid: 54cff639e8a08acc3b2423cef33a12a2, type: 3}
   - {fileID: 3762762730502698379, guid: 294475860a2e9f95c92875e1d9117cbb, type: 3}
+  - {fileID: 4933758337787163299, guid: 54cff639e8a08acc3b2423cef33a12a2, type: 3}
+  - {fileID: 8301582385105410161, guid: e837eca366d4fff53a0e14dd71ec9ca9, type: 3}
+  - {fileID: 8184005290077841076, guid: 8f2798bcd188e19298ebc3d7212fe7fd, type: 3}
+  - {fileID: 5446112688787249911, guid: eda39e73eed4a9a5fbdac8040ef5290e, type: 3}
 --- !u!1 &2005491088
 GameObject:
   m_ObjectHideFlags: 0
