@@ -16,10 +16,15 @@ public class SpawnManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            randomNumber = Random.Range(0, _animalPrefabs.Count);
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPositionZ);
-            
-            Instantiate(_animalPrefabs[randomNumber], spawnPosition, _animalPrefabs[randomNumber].transform.rotation);
+            SpawnRandomAnimal();
         }
+    }
+
+    void SpawnRandomAnimal()
+    {
+        randomNumber = Random.Range(0, _animalPrefabs.Count);
+        Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPositionZ);
+            
+        Instantiate(_animalPrefabs[randomNumber], spawnPosition, _animalPrefabs[randomNumber].transform.rotation);
     }
 }
